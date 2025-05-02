@@ -6,11 +6,13 @@ Antes de tudo, se certifique de que você tem o node instalado na sua máquina. 
 
 ## Executando os arquivos
 Faça o clone desse repositório utilizando o comando abaixo:
+
 `git clone https://github.com/biancassantos/devfullstack-maisprati.git`
 
 Abra a pasta "devfullstack-maisprati" no seu editor e, no terminal, execute a sequência de comandos para instalar todas as dependências necessárias:
 
 `cd modulo_1`
+
 `npm install`
 
 
