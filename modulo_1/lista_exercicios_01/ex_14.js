@@ -8,7 +8,7 @@ let fatorial = 1
 
 if (Number.isInteger(num) && num >= 0) {
 
-  if (num != 0 || num != 1) {
+  if (num != 0 && num != 1) {
     for (let i = num; i >= 2; i--) {
       fatorial *= i
     }
