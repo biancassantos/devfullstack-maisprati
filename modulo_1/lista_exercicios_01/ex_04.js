@@ -3,7 +3,7 @@ Utilize switch-case para implementar a lógica de cada opção selecionada. */
 
 const prompt = require('prompt-sync')();
 
-let opcao = prompt("Escolha uma opção [pedra/papel/tesoura]: ")
+let opcao = prompt("Escolha uma opção [pedra/papel/tesoura]: ").toLowerCase()
 
 switch (opcao) {
   case "pedra":
