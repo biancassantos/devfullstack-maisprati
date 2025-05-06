@@ -4,10 +4,12 @@ Fibonacci utilizando um loop for. */
 let a = 0
 let b = 1
 
-console.log(a)
-
 for (let i = 0; i < 9; i++) {
-  c = a + b
+  if (a === 0) {
+    console.log(a)
+  }
+
+  let c = a + b
   b = a
   a = c
   console.log(c)
