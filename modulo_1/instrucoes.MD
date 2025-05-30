@@ -28,3 +28,10 @@ Caso precise "entrar" em mais de uma pasta, separe os nomes com uma "/" até ati
 Após isso, execute o seguinte comando (caso não possua a extensão Code Runner) para executar o arquivo desejado:
 
 `node nome_do_arquivo.js`
+
+
+Para voltar pastas, utilize o comando:
+
+`cd ../`
+
+Cada '../' volta uma pasta, então junte quantos precisar para chegar na pasta desejada.
