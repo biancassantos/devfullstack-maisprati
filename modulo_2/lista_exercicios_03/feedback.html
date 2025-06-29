@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Bear | Feedback</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>The Bear</h1>
+      <hr>
+      <p>O restaurante mais recomendado de Chicago</p>
+    </div>
+    
+    <nav class="desktop-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="feedback.html" class="active">Feedback</a></li>
+        <li><a href="listas.html">Receita</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+      </ul>
+    </nav>
+
+    <input type="checkbox" id="check" />
+
+    <nav class="mobile-menu">
+      <ul>
+        <li><label for="check" class="close-menu"><img src="imgs/icons/close-menu-icon.svg" alt="Ícone de fechar o menu"></label></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="feedback.html" class="active">Feedback</a></li>
+        <li><a href="listas.html">Receita</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+      </ul>
+    </nav>
+    <label for="check" class="open-menu"><img src="imgs/icons/menu-icon.svg" alt="ícone de menu"></label>
+  </header>
+
+  <!-- Exercício 3 -->
+  <main>
+    <section id="feedback-section">
+      <h2>Feedback</h2>
+      <p>Já esteve no nosso restaurante? Deixe um feedback para nós!</p>
+      <form>
+        <div>
+          <label for="name">Nome</label>
+          <input type="text" id="name" class="medium-input">
+        </div>
+
+        <div>
+          <label for="email" class="required-input">E-mail</label>
+          <input type="email" id="email" required>
+        </div>
+
+        <div>
+          <label for="address">Endereço</label>
+          <input type="text" id="address">
+        </div>
+
+        <div>
+          <label for="number">Número</label>
+          <input type="number" id="number" min="0" class="small-input">
+        </div>
+
+        <div>
+          <label for="state">Estado</label>
+          <input type="text" id="state" maxlength="2" class="small-input">
+        </div>
+
+        <div>
+          <label for="city">Cidade</label>
+          <input type="text" id="city" class="medium-input">
+        </div>
+
+        <div>
+          <label for="feedback-type">Tipo de feedback</label>
+          <select id="feedback-type">
+            <option value="review">Avaliação</option>
+            <option value="complaint">Reclamação</option>
+            <option value="suggestion">Sugestão</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="feedback" class="required-input">Feedback</label>
+          <textarea id="feedback" minlength="25" rows="8"></textarea>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <nav>
+      <a href="https://www.instagram.com/thebearfx/" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 64 64">
+          <path d="M 21.580078 7 C 13.541078 7 7 13.544938 7 21.585938 L 7 42.417969 C 7 50.457969 13.544938 57 21.585938 57 L 42.417969 57 C 50.457969 57 57 50.455062 57 42.414062 L 57 21.580078 C 57 13.541078 50.455062 7 42.414062 7 L 21.580078 7 z M 47 15 C 48.104 15 49 15.896 49 17 C 49 18.104 48.104 19 47 19 C 45.896 19 45 18.104 45 17 C 45 15.896 45.896 15 47 15 z M 32 19 C 39.17 19 45 24.83 45 32 C 45 39.17 39.169 45 32 45 C 24.83 45 19 39.169 19 32 C 19 24.831 24.83 19 32 19 z M 32 23 C 27.029 23 23 27.029 23 32 C 23 36.971 27.029 41 32 41 C 36.971 41 41 36.971 41 32 C 41 27.029 36.971 23 32 23 z"></path>
+        </svg>
+      </a>
+    
+      <a href="https://www.youtube.com/watch?v=dEYsiSF-Uw8&ab_channel=ColliderBehindtheScenes" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+          <path d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"></path>
+        </svg>
+      </a>
+
+      <a href="https://www.fxnetworks.com/shows/the-bear/cast" target="_blank">
+        Nosso time
+      </a>
+    </nav>
+
+    <hr>
+
+    <p>&copy; 2025 The Bear | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
