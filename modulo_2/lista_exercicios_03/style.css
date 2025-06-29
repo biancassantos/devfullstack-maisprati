@@ -291,8 +291,16 @@ textarea {
 }
 
 #gallery-container section div h3 {
-  background-color: var(--light-gray);
+  border-bottom: 2px solid var(--dark-blue);
   padding-left: 5px;
+}
+
+#gallery-container section:nth-child(odd) div h3 {
+  border-right: 2px solid var(--dark-blue);
+}
+
+#gallery-container section:nth-child(even) div h3 {
+  border-left: 2px solid var(--dark-blue);
 }
 
 #img-1,
@@ -312,7 +320,7 @@ textarea {
 
 #gallery-container section img {
   max-width: 350px;
-  border-radius: 5px;
+  border-radius: 3px;
   border: 8px solid var(--light-gray);
 }
 
@@ -469,6 +477,15 @@ footer p {
   #feedback-section form div input,
   #feedback-section form div input.medium-input {
     width: 100%;
+  }
+
+  #gallery-container section {
+    gap: 1rem;
+  }
+
+  #gallery-container section:nth-child(odd) div h3 {
+    border-right: none;
+    border-left: 2px solid var(--dark-blue);
   }
 
   footer {
