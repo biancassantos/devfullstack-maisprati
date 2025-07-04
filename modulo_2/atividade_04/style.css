@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* --- Global --- */
+:root {
+  --main-purple: #2a0d51;
+  --light-purple: #c9b1df;
+  --light-gray: #f2f2f2;
+  --dark-gray: #d5d5d5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--main-purple);
+}
+
+main {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 4rem 3rem;
+  max-width: 1100px;
+}
+
+h1, h2, h3 {
+  font-family: "Gabarito", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+h2::before {
+  content: "✦ ";
+  color: var(--light-purple);
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  transition: .3s;
+}
+
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+
+/* --- Header --- */
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 2rem 3rem;
+  width: 100%;
+  max-width: 1100px;
+  color: var(--light-gray);
+}
+
+header img {
+  width: 230px;
+  height: 230px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid var(--light-purple);
+}
+
+header p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+header nav ul li a {
+  padding: 8px 20px;
+  color: var(--light-purple);
+  border: 2px solid var(--light-purple);
+  border-radius: 25px;
+}
+
+header nav ul li a:hover {
+  color: var(--main-purple);
+  border-color: var(--light-gray);
+  background-color: var(--light-gray);
+}
+
+
+/* --- Main content --- */
+#main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+
+/* --- Aside --- */
+aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+aside hr {
+  display: none;
+  border-left: 1px solid var(--main-purple);
+}
+
+aside a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 5px;
+  color: var(--main-purple);
+}
+
+aside a svg {
+  width: 30px;
+  height: 30px;
+}
+
+aside a svg g {
+  fill: var(--main-purple);
+  transition: .3s;
+}
+
+aside a:hover,
+aside a:hover svg g {
+  color: var(--light-purple);
+  fill: var(--light-purple);
+}
+
+
+/* --- Sobre mim --- */
+#about-me p {
+  font-size: 1.1rem;
+}
+
+
+/* --- Habilidades --- */
+#skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+#skills-container article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 15px;
+  width: 100%;
+  min-height: 110px;
+  border-radius: 5px;
+  background-color: var(--light-purple);
+  color: var(--main-purple);
+}
+
+#skills-container article div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #af95c7;
+}
+
+#skills-container article div img {
+  width: 30px;
+  height: 30px;
+}
+
+
+/* --- Projetos --- */
+#projects-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+  border: 5px solid var(--light-gray);
+  overflow: hidden;
+}
+
+.project-card a img {
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+}
+
+.project-card a img:hover {
+  scale: 1.02;
+}
+
+.project-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+  background-color: var(--light-gray);
+}
+
+.project-card div h3 {
+  font-size: 1.2rem;
+}
+
+.project-card div p a {
+  color: var(--main-purple);
+  padding: 10px;
+}
+
+.project-card div p a:hover {
+  color: var(--light-purple);
+}
+
+.project-card div p::before {
+  content: "➜";
+  color: var(--main-purple);
+}
+
+
+/* --- Contato --- */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--light-gray);
+  box-shadow: 8px 8px 0 2px var(--dark-gray);
+  max-width: 380px;
+  width: 100%;
+  padding: 1.5rem;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+#contact form div label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--main-purple);
+}
+
+#contact form div input,
+#contact form div textarea {
+  border: 1px solid var(--dark-gray);
+  border-radius: 25px;
+  padding: 8px 12px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+#contact form div textarea {
+  border-radius: 15px;
+  resize: none;
+}
+
+#contact form button {
+  background-color: var(--light-purple);
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  color: var(--main-purple);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: .3s;
+}
+
+#contact form button:hover {
+  background-color: var(--main-purple);
+  color: var(--light-gray);
+}
+
+
+/* --- Footer --- */
+footer {
+  color: var(--light-purple);
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+footer p {
+  text-align: center;
+  font-size: .9rem;
+}
+
+
+/* --- Media queries --- */
+@media screen and (max-width: 720px) {
+  header {
+    padding: 2rem;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+  }
+
+  header nav ul {
+    gap: 1rem;
+  }
+
+  aside {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  aside hr {
+    display: block;
+  }
+
+  .project-card {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  main {
+    padding: 2rem 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 1.5rem;
+  }
+
+  header img {
+    width: 150px;
+    height: 150px;
+  }
+
+  header p {
+    font-size: 1rem;
+    margin-bottom: 0;
+    margin-top: 8px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1.5rem;
+    margin: 0;
+  }
+
+  header nav ul li {
+    margin: 5px 0;
+  }
+
+  header nav ul li a {
+    padding: 8px 15px;
+    font-size: .9rem;
+  }
+
+  .container {
+    padding: 2rem 1rem;
+  }
+
+  .project-card {
+    max-width: 100%;
+  }
+
+  #contact form {
+    padding: 1rem;
+    box-shadow: none;
+  }
+}
